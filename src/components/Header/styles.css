@@ -1,0 +1,83 @@
+﻿
+.logo {
+    color: #FFF;
+    text-align: center;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.header__menu__text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto" , sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 10px 0 !important;
+    color: #fff;
+    border-bottom: 2px solid #fff; /* Добавляем нижнюю линию */
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #c2185b;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.login-button:hover {
+    background-color: #ad1457;
+}
+
+.user-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.user-icon i {
+    font-size: 24px;
+}

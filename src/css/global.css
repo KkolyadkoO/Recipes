@@ -1,0 +1,15 @@
+﻿.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+body {
+    background-color: #1A1A1D;
+    padding: 32px;
+}
+
