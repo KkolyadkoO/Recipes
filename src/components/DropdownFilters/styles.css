@@ -1,0 +1,48 @@
+﻿.filters-container {
+    margin-bottom: 10px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #950740;
+    color: white;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #830638;
+}
+
+/* Выпадающий блок */
+.filters-dropdown {
+    overflow: hidden; /* Скрытие содержимого */
+    visibility: hidden;
+    max-height: 0; /* Начальное скрытое состояние */
+    margin-top: 10px; /* Отступ от кнопки */
+    background-color: #702232;
+    border-radius: 20px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out, visibility 0.3s ease-out; /* Анимация */
+    padding: 0 10px; /* Паддинг по умолчанию */
+}
+
+.filters-dropdown.visible {
+    visibility: visible;
+    max-height: 500px; /* Увеличиваем максимальную высоту */
+    padding: 10px; /* Восстанавливаем паддинг */
+}
+
+.filter-item {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.filter-item:last-child {
+    border-bottom: none;
+}
+
+.filter-item:hover {
+    background-color: #e9ecef;
+}

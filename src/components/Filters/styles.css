@@ -1,0 +1,199 @@
+﻿/* Filters.css */
+.filters__container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Underdog', system-ui;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.filters__section{
+    width: 100%;
+    gap: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filters__filter-group {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 5px;
+    flex: 1 1 auto;
+}
+
+
+.filters__dropdown {
+    border-radius: 33px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #950740;
+    width: 80%;
+    color: #d1d1d1;
+    text-align: start;
+    font-family: 'Underdog', system-ui;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.filters__input {
+    border-radius: 33px;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: #950740;
+    color: #FFF;
+    text-align: start;
+    font-family: 'Underdog', system-ui;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.filters__input::placeholder {
+    color: #D1d1d1;
+}
+
+.filters__checkbox {
+    border-radius: 5px;
+    background: #BDBDBD;
+}
+
+
+.filters__checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+    position: relative;
+}
+
+.filters__checkbox {
+    display: none; /* Скрываем стандартный чекбокс */
+}
+
+.filters__custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #702232;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.filters__checkbox:checked + .filters__custom-checkbox {
+    background-color: #320f16;
+    border-color: #702232;
+    transform: scale(1.1);
+}
+
+.filters__custom-checkbox::after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 4px; /* Длина "ножки" галочки */
+    height: 8px; /* Длина "плеча" галочки */
+    border: solid white;
+    border-width: 0 2px 2px 0; /* Создаёт галочку */
+    transform: rotate(45deg); /* Поворот в правильную сторону */
+    top: 3px; /* Положение по вертикали внутри квадрата */
+    left: 7px; /* Положение по горизонтали внутри квадрата */
+}
+
+.filters__checkbox:checked + .filters__custom-checkbox::after {
+    display: block;
+}
+
+
+.filters__slider {
+    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    transition: background 0.3s;
+    position: relative;
+}
+
+.filters__slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный маркер */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #950740;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.filters__slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.filters__slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.filters__slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007BFF;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.filters__slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: -10px; /* Приподнимает трек относительно стандартного уровня */
+}
+
+.filters__slider::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: -4px; /* Приподнимает трек относительно стандартного уровня */
+}
+
+.filters__slider::-ms-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: transparent; /* Задаём прозрачный трек для IE */
+    z-index: 1;
+    margin-top: -4px; /* Приподнимает трек относительно стандартного уровня */
+}
