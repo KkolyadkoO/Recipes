@@ -119,3 +119,12 @@
     flex-direction: column;
     margin-top: 10%;
 }
+
+.subscriptionSection{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}

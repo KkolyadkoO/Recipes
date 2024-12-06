@@ -1,0 +1,145 @@
+﻿.subscriptionFormContainer{
+    color: #FFF;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: #702232;
+    margin-top: 5%;
+}
+
+.formTitle{
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 90%;
+    text-align: center;
+}
+.formDescription{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 80%;
+    text-align: center;
+}
+
+.subscriptionForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5% 0;
+}
+
+.subscriptionFormBlock1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 45%;
+}
+
+.subscriptionFormBlock1 input{
+    border-radius: 9px;
+    color: #4E4E50;
+    outline: none;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    line-height: normal;
+}
+
+.subscriptionFormBlock1 button{
+    border-radius: 9px;
+    color: #FFF;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #950740;
+}
+.subscriptionFormBlock2{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.subscriptionFormBlock2 p{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0 0 3vh 0;
+}
+
+@media (max-width: 1024px) {
+    .subscriptionFormContainer {
+        width: 80%;
+        margin-top: 8%;
+        padding: 20px 20px 0 20px;
+    }
+
+    .subscriptionForm {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .subscriptionFormBlock1 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .subscriptionFormBlock2 {
+        width: 100%;
+    }
+}
+
+/* Адаптив для телефонов (ширина до 767px) */
+@media (max-width: 767px) {
+    .subscriptionFormContainer {
+        width: 85%;
+        margin-top: 10%;
+        padding: 20px 20px 0 20px;
+    }
+
+    .formTitle {
+        font-size: 24px;
+    }
+
+    .formDescription {
+        font-size: 16px;
+    }
+
+    .subscriptionForm {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .subscriptionFormBlock1 input,
+    .subscriptionFormBlock1 button {
+        font-size: 16px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .subscriptionFormBlock2 p {
+        font-size: 18px;
+    }
+}

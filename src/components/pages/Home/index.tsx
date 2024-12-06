@@ -4,7 +4,9 @@ import Header from "../../Header";
 import Footer from "../../Footer";
 import './styles.css';
 import TitleComponent from "../../TitleComponent";
-import Carousel from "../../Carousel";
+import CarouselRecommendations from "../../carousel/CarouselRecommendations";
+import SubscriptionForm from "../../forms/SubscriptionForm";
+import CarouselComments from "../../carousel/CarouselComments";
 
 const HomePage = () => {
     return (
@@ -44,7 +46,16 @@ const HomePage = () => {
                 </div>
                 <div className="recommendationsSection">
                     <TitleComponent text={"Предложения"}/>
-                    <Carousel/>
+                    <CarouselRecommendations/>
+                </div>
+                <div className="recommendationsSection">
+                    <TitleComponent text={"Комментарии"}/>
+                    <CarouselComments/>
+                </div>
+
+                <div className="subscriptionSection">
+                    <TitleComponent text={"Подписка"}/>
+                    <SubscriptionForm/>
                 </div>
             </div>
             <Footer/>

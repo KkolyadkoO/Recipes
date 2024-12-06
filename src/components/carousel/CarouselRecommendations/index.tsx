@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import './styles.css';
 
-const Carousel = () => {
+const CarouselRecommendations = () => {
     const [activeIndex, setActiveIndex] = useState(1);
 
     const items = [
@@ -47,4 +47,4 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default CarouselRecommendations;
