@@ -1,0 +1,121 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    border-radius: 0 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 9px;
+}
+
+
+
+.hero-title {
+    text-align: center;
+    font-family: 'Underdog', system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    width: 300px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background: #F2F2F2;
+}
+
+.search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #F2F2F2;
+    color: #000;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #f0f0f0;
+}
+
+.search-button img{
+    width: 36px;
+    height: 36px;
+}
+
+.offersSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.offersSection p{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 75%;
+}
+
+.aboutSection{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutSection img{
+    background-color: rgba(211, 211, 211, 0.5); /* lightgray с 50% прозрачности */
+    background-size: cover; /* Растягивает изображение, чтобы оно покрывало весь блок */
+    background-repeat: no-repeat; /* Отключает повторение */
+    width: 40%; /* Ширина контейнера */
+    display: block; /* Чтобы корректно отображать как блочный элемент */
+    border-radius: 0 40px;
+    margin-right: 10%;
+}
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+.aboutText div{
+    text-align: start;
+}
+
+.aboutText p{
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.recommendationsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}

@@ -1,0 +1,36 @@
+﻿.titleComponent {
+    color: #FFF;
+    text-align: center;
+    font-family: "Underdog", system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top: 2px solid #FFF;
+    padding-top: 25px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.titleWrapper {
+    display: inline-block; /* Позволяет элементу адаптироваться к содержимому */
+}
+/* Для планшетов (ширина экрана от 768px до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .titleComponent {
+        font-size: 50px; /* Уменьшаем шрифт */
+        padding-top: 20px; /* Уменьшаем отступ сверху */
+    }
+}
+
+/* Для телефонов (ширина экрана до 768px) */
+@media (max-width: 767px) {
+    .titleComponent {
+        font-size: 35px; /* Еще меньше шрифт */
+        padding-top: 15px; /* Еще меньше отступ сверху */
+    }
+
+    .titleWrapper {
+        text-align: center; /* Центрируем текст */
+    }
+}

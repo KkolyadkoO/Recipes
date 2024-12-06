@@ -26,6 +26,7 @@
     padding: 0 0 10px 0 !important;
     color: #fff;
     border-bottom: 2px solid #fff; /* Добавляем нижнюю линию */
+    margin-bottom: 9px !important;
 }
 
 .nav {

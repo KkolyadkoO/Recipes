@@ -1,0 +1,95 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1A1A1D;
+    color: #fff;
+    border-top: 2px solid #fff;
+    padding-top: 20px;
+}
+
+.footer-contact {
+    flex: 1;
+}
+
+.footer h3 {
+    font-family: "Underdog", system-ui;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 5%;
+}
+
+.footer-contact p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.footer-rights {
+    flex: 2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+.footer-rights p {
+    margin: 0;
+}
+/* Для планшетов (от 768px до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .footer {
+        flex-direction: column; /* Ставим элементы в колонку */
+        align-items: center; /* Центрируем элементы */
+        text-align: center; /* Центрируем текст */
+        padding: 15px;
+    }
+
+    .footer h3 {
+        font-size: 30px;
+        margin: 1%;
+    }
+
+    .footer-contact p {
+        font-size: 20px;
+    }
+
+    .footer-rights {
+        margin: 1%;
+        font-size: 18px;
+    }
+}
+
+/* Для телефонов (до 768px) */
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .footer h3 {
+        font-size: 24px;
+        margin: 1%;
+    }
+
+    .footer-contact p {
+        font-size: 18px;
+    }
+
+    .footer-rights {
+        margin: 1%;
+        font-size: 16px;
+    }
+
+    .footer-rights p {
+        line-height: 1.5; /* Увеличиваем межстрочный интервал для удобства чтения */
+    }
+}
