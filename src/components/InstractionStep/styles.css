@@ -1,0 +1,39 @@
+.instructionStep__container {
+    width: 100%;
+    margin-top: 5%; /* Отступ сверху */
+    overflow: hidden; /* Для корректного поведения float */
+}
+
+.instructionStep__imageContainer {
+    width: 45%; /* Фиксированная ширина контейнера */
+    float: left; /* Задает обтекание текста вокруг изображения */
+    margin-right: 20px; /* Отступ между изображением и текстом */
+}
+
+.instructionStep__imageContainer img {
+    width: 100%; /* Изображение растягивается по ширине контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 0 40px; /* Скругление углов */
+    display: block; /* Убирает пробелы вокруг изображения */
+    object-fit: cover; /* Масштабирование без искажения */
+}
+
+.instructionStep__info {
+    display: block; /* Гарантируем текстовый поток */
+    color: #FFF; /* Белый текст */
+    font-family: Roboto, sans-serif;
+    font-size: 25px; /* Размер текста */
+    font-weight: 300; /* Тонкий шрифт */
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+
+.instructionStep__step {
+    margin-top: 0;
+    margin-bottom: 1%;
+    color: #FFFFFF; /* Белый цвет */
+    text-align: left; /* Текст слева */
+    font-family: 'Underdog', system-ui; /* Шрифт Underdog */
+    font-size: 65px; /* Размер шрифта */
+    font-weight: 400; /* Стандартная толщина */
+    line-height: normal; /* Стандартный межстрочный интервал */
+}

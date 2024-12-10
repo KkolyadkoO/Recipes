@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom
 import {observer} from "mobx-react-lite";
 import HomePage from "../pages/Home";
 import RecipesPage from "../pages/RecipesPage";
+import RecipePage from "../pages/RecipePage";
 
 
 
@@ -13,6 +14,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<HomePage/>}> </Route>
                 <Route path="/recipes" element={<RecipesPage/>}> </Route>
+                <Route path="/recipe" element={<RecipePage/>}> </Route>
             </Routes>
         </Router>
     );

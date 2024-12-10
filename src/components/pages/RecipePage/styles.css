@@ -1,0 +1,155 @@
+﻿.recipePage__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.recipePage__title{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Underdog', system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+
+.recipePage__details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #C4C4C4;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.recipePage__details img {
+    width: 48px;
+    height: 48px;
+}
+
+.recipePage__bookmark {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.recipePage__bookmark:hover {
+    transform: scale(1.1);
+}
+
+.recipePage__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.recipePage__mainImg{
+    width: 80%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.recipePage__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 10%;
+}
+
+.recipePage__description p{
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.recipePage__ingredients{
+    margin-top: 10%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.recipePage__batch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.recipePage__batch p{
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.recipePage__batch img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.recipePage__batch img:hover {
+    transform: scale(1.1);
+}
+
+.recipePage__ingredient {
+    display: flex;
+    align-items: baseline;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ingredient__name {
+    margin-right: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.ingredient__quantity {
+    margin-left: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.ingredient__line {
+    flex-grow: 1;
+    border-bottom: 2px solid #ccc;
+}
+
+.recipePage__manual{
+    margin-top: 10%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+
