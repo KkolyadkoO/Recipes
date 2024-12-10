@@ -1,0 +1,95 @@
+﻿.loginForm__container{
+    width: 60%;
+    background: #702232;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.loginForm__Title{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Underdog', system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+.loginForm__line{
+    margin-top: 2%;
+    border-bottom: 2px solid #FFF;
+    width: 90%;
+}
+.loginForm__inputs{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginForm__inputs input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #F2F2F2;
+    padding: 15px 10px;
+    margin: 5% 0 0 0;
+}
+.loginForm__inputs button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #950740;
+    padding: 10px;
+    margin: 5% 0 0 0;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.loginForm__inputs input::placeholder{
+    color: #4E4E50;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.loginForm__options{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.loginForm__options_text{
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.loginForm__options_link{
+    cursor: pointer;
+    color: #e10b4c;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+
+}
