@@ -1,4 +1,4 @@
-﻿.loginForm__container{
+.registerForm__container{
     width: 60%;
     background: #702232;
     border-radius: 40px;
@@ -10,7 +10,7 @@
     margin-bottom: 5%;
 }
 
-.loginForm__Title{
+.registerForm__Title{
     color: #FFF;
     text-align: center;
     font-family: 'Underdog', system-ui;
@@ -21,19 +21,19 @@
     margin-top: 2%;
     margin-bottom: 0%;
 }
-.loginForm__line{
+.registerForm__line{
     margin-top: 2%;
     border-bottom: 2px solid #FFF;
     width: 90%;
 }
-.loginForm__inputs{
+.registerForm__inputs{
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.loginForm__inputs input{
+.registerForm__inputs input{
     width: 100%;
     border: none;
     outline: none;
@@ -48,7 +48,7 @@
     font-weight: 400;
     line-height: normal;
 }
-.loginForm__inputs button{
+.registerForm__inputs button{
     border: none;
     outline: none;
     border-radius: 10px;
@@ -62,7 +62,7 @@
     font-weight: 700;
     line-height: normal;
 }
-.loginForm__inputs input::placeholder{
+.registerForm__inputs input::placeholder{
     color: #4E4E50;
     font-family: Roboto, sans-serif;
     font-size: 20px;
@@ -71,7 +71,7 @@
     line-height: normal;
 }
 
-.loginForm__options{
+.registerForm__options{
     margin-top: 3%;
     display: flex;
     flex-direction: row;
@@ -80,7 +80,7 @@
     width: 50%;
 }
 
-.loginForm__options_text{
+.registerForm__options_text{
     color: #FFF;
     font-family: Roboto, sans-serif;
     font-size: 24px;
@@ -90,7 +90,7 @@
     margin: 0;
 }
 
-.loginForm__options_link{
+.registerForm__options_link{
     cursor: pointer;
     color: #e10b4c;
     font-family: Roboto, sans-serif;
@@ -102,68 +102,68 @@
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-    .loginForm__container {
+    .registerForm__container {
         width: 80%;
         padding: 5%;
         margin-top: 10%;
         margin-bottom: 10%;
     }
 
-    .loginForm__Title {
+    .registerForm__Title {
         font-size: 50px;
     }
 
-    .loginForm__inputs {
+    .registerForm__inputs {
         width: 90%;
     }
 
-    .loginForm__inputs input {
+    .registerForm__inputs input {
         font-size: 18px;
     }
 
-    .loginForm__inputs button {
+    .registerForm__inputs button {
         font-size: 28px;
     }
 
-    .loginForm__options {
+    .registerForm__options {
         width: 70%;
     }
 
-    .loginForm__options_text,
-    .loginForm__options_link {
+    .registerForm__options_text,
+    .registerForm__options_link {
         font-size: 20px;
     }
 }
 
 @media (max-width: 767px) {
-    .loginForm__container {
+    .registerForm__container {
         width: 95%;
         padding: 8%;
         margin-top: 15%;
         margin-bottom: 15%;
     }
 
-    .loginForm__Title {
+    .registerForm__Title {
         font-size: 40px;
     }
 
-    .loginForm__inputs input {
+    .registerForm__inputs input {
         font-size: 16px;
         padding: 12px 8px;
     }
 
-    .loginForm__inputs button {
+    .registerForm__inputs button {
         font-size: 24px;
     }
 
-    .loginForm__options {
+    .registerForm__options {
         flex-direction: column;
         width: 90%;
         text-align: center;
     }
 
-    .loginForm__options_text,
-    .loginForm__options_link {
+    .registerForm__options_text,
+    .registerForm__options_link {
         font-size: 18px;
         margin: 5px 0;
     }

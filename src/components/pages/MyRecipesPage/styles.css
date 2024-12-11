@@ -1,0 +1,27 @@
+.myRecipesPage__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.myRecipesPage__title div{
+    color: #DBDBDB;
+    text-align: center;
+    font-family: "Underdog", system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 2px solid #FFF;
+    margin-bottom: 2%;
+}
+
+.myRecipesPage__cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
