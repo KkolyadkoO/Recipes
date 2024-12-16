@@ -95,3 +95,43 @@
 .scroll-button.right {
     right: 10px;
 }
+/* Адаптивность для мобильных устройств (ширина экрана до 768px) */
+@media (max-width: 767px) {
+    .carousel-items {
+        width: 90%; /* Немного уменьшаем ширину карусели */
+        height: 50vw; /* Уменьшаем высоту карусели для мобильных устройств */
+        overflow: visible; /* Убедитесь, что все элементы видимы */
+    }
+
+    .carousel-item {
+        padding-top: 5%; /* Уменьшаем внутренние отступы */
+        padding-bottom: 5%; /* Уменьшаем нижние отступы */
+    }
+
+    .carousel-item img {
+        width: 30vw; /* Уменьшаем размер изображения */
+        height: 30vw; /* Пропорциональная высота изображения */
+        margin-bottom: 5px; /* Уменьшаем отступ снизу */
+    }
+
+    .carousel-item p {
+        font-size: 18px; /* Уменьшаем шрифт текста в карточках */
+    }
+
+    .scroll-button {
+        font-size: 50px; /* Уменьшаем размер кнопок прокрутки */
+    }
+
+    .scroll-button.left {
+        left: 10px; /* Уменьшаем отступы для мобильной версии */
+    }
+
+    .scroll-button.right {
+        right: 10px; /* Уменьшаем отступы для мобильной версии */
+    }
+}
+@media (max-width: 1024px) {
+    .scroll-button {
+        display: none; /* Прячем стрелки */
+    }
+}

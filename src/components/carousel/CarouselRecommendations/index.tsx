@@ -1,4 +1,5 @@
 ﻿import React, { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import './styles.css';
 
 const CarouselRecommendations = () => {
@@ -18,8 +19,17 @@ const CarouselRecommendations = () => {
         setActiveIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
     };
 
+    // Используем react-swipeable для управления свайпами
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: handleNext,
+        onSwipedRight: handlePrev,
+        preventScrollOnSwipe: true,
+        trackMouse: true, // Поддержка мыши для десктопов
+    });
+
     return (
-        <div className="carousel">
+        <div className="carousel" {...swipeHandlers}>
+            {/* Кнопки остаются для десктопной версии */}
             <button className="scroll-button left" onClick={handlePrev}>
                 {'<'}
             </button>

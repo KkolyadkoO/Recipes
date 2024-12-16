@@ -1,4 +1,5 @@
-﻿.carouselComments {
+﻿/* Базовый стиль (для больших экранов) */
+.carouselComments {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +13,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 85%; /* Карусель занимает 80% ширины экрана */
+    width: 85%;
     height: 30vw;
     overflow: hidden;
 }
@@ -33,14 +34,13 @@
     padding: 2% 2% 3%;
 }
 
-.carouselComments-item.prev {
+.carouselComments-item.prev{
     transform: translateX(-200%) scale(0.8);
     opacity: 0.6;
     z-index: 1;
     background-color: #702232;
     border-radius: 40px;
-    padding-top: 2%;
-    padding-bottom: 3%;
+    padding: 2% 2% 3%;
 }
 
 .carouselComments-item.next {
@@ -49,8 +49,7 @@
     z-index: 1;
     background-color: #702232;
     border-radius: 40px;
-    padding-top: 2%;
-    padding-bottom: 3%;
+    padding: 2% 2% 3%;
 }
 
 .carouselComments-item img {
@@ -95,12 +94,12 @@
     right: 10px;
 }
 
-.head{
+.head {
     display: flex;
     flex-direction: row;
 }
 
-.content{
+.content {
     color: #F4F4F2;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
@@ -109,12 +108,12 @@
     line-height: normal;
 }
 
-.carouselComments__Description{
+.carouselComments__Description {
     display: flex;
     flex-direction: column;
 }
 
-.carouselComments__Name{
+.carouselComments__Name {
     color: #F4F4F2 !important;
     font-family: "Roboto", sans-serif !important;
     font-size: 32px !important;
@@ -123,7 +122,8 @@
     line-height: normal !important;
     margin: 0 !important;
 }
-.carouselComments__Date{
+
+.carouselComments__Date {
     color: #C4C4C4 !important;
     font-family: "Roboto", sans-serif !important;
     font-size: 24px !important;
@@ -131,4 +131,84 @@
     font-weight: 400 !important;
     line-height: normal !important;
     margin: 0 !important;
+}
+
+/* Планшетная версия (ширина от 768px до 1024px) */
+@media (max-width: 1024px) {
+    .carouselComments-items {
+        width: 90%;
+        height: 40vw;
+    }
+
+    .carouselComments-item {
+        padding: 3%;
+    }
+
+    .carouselComments-item img {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+
+    .carouselComments__Name {
+        font-size: 28px !important;
+    }
+
+    .carouselComments__Date {
+        font-size: 20px !important;
+    }
+
+    .scroll-button {
+        font-size: 80px;
+    }
+}
+
+/* Мобильная версия (ширина до 768px) */
+@media (max-width: 768px) {
+    .carouselComments {
+        flex-direction: column;
+    }
+
+    .carouselComments-items {
+        width: 100%;
+        height: auto;
+    }
+
+    .carouselComments-item {
+        min-width: 80%;
+        position: relative;
+        transform: scale(1);
+        opacity: 1;
+        padding: 5%;
+        margin-bottom: 20px;
+    }
+
+    .carouselComments-item img {
+        width: 12vh;
+        height: 12vh;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    .carouselComments__Name {
+        font-size: 24px !important;
+    }
+
+    .carouselComments__Date {
+        font-size: 18px !important;
+    }
+
+    .scroll-button {
+        font-size: 60px;
+    }
+
+    .scroll-button.left, .scroll-button.right {
+        position: static;
+        margin: 10px;
+    }
 }

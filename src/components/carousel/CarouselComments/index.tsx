@@ -1,10 +1,10 @@
 ﻿import React, {useState} from 'react';
+import {useSwipeable} from 'react-swipeable';
 import './styles.css';
 import StarRating from "../../StarRating/StarRating";
 
 const CarouselComments = () => {
     const [activeIndex, setActiveIndex] = useState(1);
-
 
     const items = [
         {
@@ -41,8 +41,13 @@ const CarouselComments = () => {
         setActiveIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
     };
 
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: handleNext,
+        onSwipedRight: handlePrev,
+    });
+
     return (
-        <div className="carouselComments">
+        <div className="carouselComments" {...swipeHandlers}>
             <button className="scroll-button left" onClick={handlePrev}>
                 {'<'}
             </button>

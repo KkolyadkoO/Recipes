@@ -1,6 +1,6 @@
 ﻿.titleComponent {
     color: #FFF;
-    text-align: center;
+    text-align: center !important;
     font-family: "Underdog", system-ui;
     font-size: 65px;
     font-style: normal;
@@ -21,6 +21,11 @@
         font-size: 50px; /* Уменьшаем шрифт */
         padding-top: 20px; /* Уменьшаем отступ сверху */
     }
+    .titleComponent {
+        white-space: normal; /* Позволяет перенос строк */
+        word-wrap: break-word; /* Разрешает перенос слов, если они слишком длинные */
+    }
+
 }
 
 /* Для телефонов (ширина экрана до 768px) */
@@ -28,6 +33,10 @@
     .titleComponent {
         font-size: 35px; /* Еще меньше шрифт */
         padding-top: 15px; /* Еще меньше отступ сверху */
+    }
+    .titleComponent {
+        white-space: normal; /* Позволяет перенос строк */
+        word-wrap: break-word; /* Разрешает перенос слов, если они слишком длинные */
     }
 
     .titleWrapper {

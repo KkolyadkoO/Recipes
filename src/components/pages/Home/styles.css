@@ -128,3 +128,113 @@
     align-items: center;
     margin-bottom: 5%;
 }
+
+/* Общие стили для мобильных устройств */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+        border-radius: 0;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 90%;
+        border-radius: 25px;
+    }
+
+    .search-button {
+        width: auto;
+        border-radius: 25px;
+    }
+
+    .offersSection p {
+        font-size: 20px;
+    }
+
+    .aboutSection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutSection img {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .aboutText {
+        width: 90%;
+    }
+
+    .aboutText p {
+        font-size: 18px;
+    }
+
+    .recommendationsSection {
+        margin-top: 5%;
+    }
+
+    .subscriptionSection {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+}
+
+/* Адаптация для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-section {
+        height: 75vh;
+        border-radius: 0;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .search-bar {
+        flex-direction: row;
+    }
+
+    .search-input {
+        width: 70%;
+    }
+
+    .offersSection p {
+        font-size: 28px;
+    }
+
+    .aboutSection {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aboutSection img {
+        width: 45%;
+    }
+
+    .aboutText {
+        width: 50%;
+    }
+
+    .aboutText p {
+        font-size: 20px;
+    }
+
+    .recommendationsSection {
+        margin-top: 7%;
+    }
+
+    .subscriptionSection {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+}
