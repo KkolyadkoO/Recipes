@@ -17,7 +17,7 @@ const HomePage = () => {
                     background: 'url(/images/homePageImage.png) lightgray 50% / cover no-repeat',
                 }}>
                     <div className="hero-overlay">
-                        <h1 className="hero-title">Recipes</h1>
+                        <h1 className="hero-title">Найди своё блюдо</h1>
                         <div className="search-bar">
                             <input
                                 type="text"
