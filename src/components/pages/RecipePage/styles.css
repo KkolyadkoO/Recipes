@@ -155,4 +155,147 @@
 }
 
 
+/* Планшеты (ширина до 1024px) */
+@media screen and (max-width: 1024px) {
+    .recipePage__title {
+        font-size: 50px; /* Уменьшаем размер заголовка */
+        padding-bottom: 2vh;
+        margin-bottom: 2vh;
+    }
 
+    .recipePage__details {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .recipePage__details img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .recipePage__mainImg {
+        width: 90%; /* Увеличиваем ширину изображения */
+        border-radius: 20px;
+    }
+
+    .recipePage__description p,
+    .ingredient__name,
+    .ingredient__quantity {
+        font-size: 20px; /* Уменьшаем текст */
+    }
+
+    .recipePage__batch p {
+        font-size: 20px;
+    }
+
+    .recipePage__batch img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .recipePage__ingredient {
+        width: 90%; /* Немного уменьшаем ширину */
+    }
+}
+
+/* Мобильные устройства (ширина до 768px) */
+@media screen and (max-width: 768px) {
+    .recipePage__head {
+        margin: 5% 0;
+    }
+
+    .recipePage__title {
+        font-size: 36px; /* Еще больше уменьшаем заголовок */
+        padding-bottom: 1.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    .recipePage__details {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .recipePage__details img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .recipePage__mainImg {
+        width: 95%;
+        border-radius: 15px;
+    }
+
+    .recipePage__description {
+        margin-top: 5%;
+    }
+
+    .recipePage__description p,
+    .ingredient__name,
+    .ingredient__quantity {
+        font-size: 18px;
+    }
+
+    .recipePage__batch {
+        gap: 10px;
+    }
+
+    .recipePage__batch p {
+        font-size: 18px;
+    }
+
+    .recipePage__batch img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .recipePage__ingredient {
+        width: 95%;
+    }
+
+
+    .recipePage__manual {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+}
+
+/* Очень маленькие устройства (ширина до 480px) */
+@media screen and (max-width: 480px) {
+    .recipePage__title {
+        font-size: 28px;
+    }
+
+    .recipePage__details {
+        font-size: 14px;
+    }
+
+    .recipePage__details img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .recipePage__mainImg {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .recipePage__description p,
+    .ingredient__name,
+    .ingredient__quantity {
+        font-size: 16px;
+    }
+
+    .recipePage__batch p {
+        font-size: 16px;
+    }
+
+    .recipePage__batch img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .recipePage__ingredient {
+        align-items: center;
+        text-align: center;
+    }
+}

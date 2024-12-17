@@ -1,0 +1,81 @@
+﻿.notFoundPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Минимальная высота контента */
+    text-align: center;
+    padding: 10px; /* Добавляем отступы для маленьких экранов */
+}
+
+.notFoundPage__content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.notFoundPage__title {
+    font-size: 8rem;
+    color: #b83141; /* Красный цвет */
+    margin: 0;
+}
+
+.notFoundPage__message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFF; /* Тёмно-серый цвет */
+}
+
+.notFoundPage__description {
+    font-size: 1.2rem;
+    color: #C4C4C4; /* Серый цвет */
+    margin: 15px 0;
+}
+
+.notFoundPage__button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #950740; /* Синий фон кнопки */
+    color: #fff; /* Белый текст */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.notFoundPage__button:hover {
+    background-color: #7e0636; /* Тёмно-синий при наведении */
+}
+
+/* ====== Адаптивность ====== */
+
+/* Для планшетов и маленьких ноутбуков */
+@media (max-width: 768px) {
+    .notFoundPage__title {
+        font-size: 5rem; /* Уменьшаем заголовок */
+    }
+    .notFoundPage__message {
+        font-size: 1.8rem; /* Уменьшаем текст */
+    }
+    .notFoundPage__description {
+        font-size: 1rem;
+    }
+    .notFoundPage__button {
+        padding: 8px 16px;
+    }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 480px) {
+    .notFoundPage__title {
+        font-size: 3.5rem; /* Ещё меньше заголовок */
+    }
+    .notFoundPage__message {
+        font-size: 1.5rem; /* Меньше текст */
+    }
+    .notFoundPage__description {
+        font-size: 0.9rem;
+    }
+    .notFoundPage__button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}

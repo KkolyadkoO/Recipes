@@ -60,7 +60,7 @@
 /* Для планшетов */
 @media (max-width: 1024px) {
     .recipeCard__card {
-        flex-direction: column; /* Изменяем на столбик */
+        flex-direction: column-reverse; /* Изменяем на столбик */
         align-items: center;
     }
     .recipeCard__card img {
@@ -70,6 +70,7 @@
     .recipeCard__info {
         width: 90%; /* Уменьшаем ширину информации */
         align-items: center; /* Центрируем текст */
+        border-bottom: none;
     }
     .recipeCard__info p {
         font-size: 20px; /* Уменьшаем размер текста */
@@ -77,12 +78,12 @@
     .recipeCard__details {
         flex-direction: row; /* Вертикальный список */
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 4px; /* Сжимаем расстояние */
     }
     .recipeCard__details div{
-        width: 20%;
+        width: 10%;
     }
     .recipeCard__details img {
         width: 36px; /* Уменьшаем размер иконок */
@@ -96,7 +97,7 @@
 /* Для мобильных устройств */
 @media (max-width: 768px) {
     .recipeCard__card {
-        flex-direction: column; /* Делаем карточку в виде столбика */
+        flex-direction: column-reverse;  /* Делаем карточку в виде столбика */
         align-items: center;
         padding: 10px; /* Добавляем внутренний отступ */
     }

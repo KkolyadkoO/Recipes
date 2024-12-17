@@ -37,3 +37,56 @@
     font-weight: 400; /* Стандартная толщина */
     line-height: normal; /* Стандартный межстрочный интервал */
 }
+@media (max-width: 1024px) {
+    .instructionStep__container {
+        flex-direction: column; /* Элементы идут вертикально */
+        text-align: center; /* Центрирование текста */
+    }
+
+    .instructionStep__imageContainer {
+        width: 100%; /* Изображение занимает больше места */
+        margin-right: 0; /* Убираем правый отступ */
+        margin-bottom: 15px; /* Добавляем отступ снизу */
+    }
+
+    .instructionStep__info {
+        font-size: 20px; /* Уменьшаем размер текста */
+    }
+
+    .instructionStep__step {
+        font-size: 50px; /* Уменьшаем размер заголовка */
+        text-align: center;
+    }
+}
+
+/* --- Адаптив под мобильные устройства (ширина до 768px) --- */
+@media (max-width: 768px) {
+    .instructionStep__imageContainer {
+        width: 100%; /* Изображение занимает почти всю ширину */
+
+    }
+
+    .instructionStep__info {
+        font-size: 18px; /* Еще меньше текст */
+    }
+
+    .instructionStep__step {
+        font-size: 40px; /* Заголовок становится меньше */
+        text-align: center;
+    }
+}
+
+/* --- Адаптив под очень маленькие экраны (ширина до 480px) --- */
+@media (max-width: 480px) {
+    .instructionStep__imageContainer {
+        width: 100%; /* Изображение занимает всю ширину */
+    }
+
+    .instructionStep__info {
+        font-size: 16px; /* Текст еще компактнее */
+    }
+
+    .instructionStep__step {
+        font-size: 35px; /* Заголовок уменьшается */
+    }
+}

@@ -6,6 +6,7 @@ import RecipePage from "../pages/RecipePage";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
 import MyRecipesPage from "../pages/MyRecipesPage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 
 
@@ -21,6 +22,7 @@ const AppRoutes = () => {
                 <Route path="/login" element={<LoginPage/>}> </Route>
                 <Route path="/register" element={<RegisterPage/>}> </Route>
                 <Route path="/myrecipes" element={<MyRecipesPage/>}> </Route>
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </Router>
     );
