@@ -1,14 +1,23 @@
 ﻿.filters-container {
-    margin-bottom: 10px;
+}
+.dropdownFilters__buttons_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .filter-button {
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: #950740;
     color: white;
     border: none;
     border-radius: 33px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
 .filter-button:hover {
@@ -45,4 +54,23 @@
 
 .filter-item:hover {
     background-color: #e9ecef;
+}
+
+/* --- Адаптив для планшетов (ширина экрана до 768px) --- */
+@media (max-width: 768px) {
+    .filter-button {
+        padding: 12px 18px;
+        font-size: 16px; /* Уменьшаем размер шрифта */
+        border-radius: 28px; /* Слегка уменьшаем радиус */
+    }
+}
+
+/* --- Адаптив для мобильных устройств (ширина экрана до 480px) --- */
+@media (max-width: 480px) {
+    .filter-button {
+        padding: 10px 15px;
+        font-size: 14px; /* Еще меньше размер шрифта */
+        border-radius: 25px;
+        text-align: center;
+    }
 }

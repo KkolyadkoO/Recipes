@@ -58,7 +58,7 @@
     color: #FFF;
     text-align: start;
     font-family: 'Underdog', system-ui;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -196,4 +196,69 @@
     background: transparent; /* Задаём прозрачный трек для IE */
     z-index: 1;
     margin-top: -4px; /* Приподнимает трек относительно стандартного уровня */
+}
+/* Адаптивные стили для планшетов */
+@media (max-width: 1024px) {
+    .filters__section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .filters__dropdown, .filters__input {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .filters__custom-checkbox {
+        width: 18px;
+        height: 18px;
+    }
+
+    .filters__custom-checkbox::after {
+        width: 3px;
+        height: 6px;
+        top: 2px;
+        left: 6px;
+    }
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .filters__container {
+        font-size: 14px;
+        gap: 15px;
+    }
+
+    .filters__section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filters__dropdown, .filters__input {
+        width: 95%;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .filters__slider {
+        width: 95%;
+    }
+
+    .filters__checkbox-label {
+        font-size: 14px;
+    }
+
+    .filters__custom-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+
+    .filters__custom-checkbox::after {
+        width: 2px;
+        height: 5px;
+        top: 1px;
+        left: 5px;
+    }
 }

@@ -57,3 +57,78 @@
     line-height: normal;
 }
 
+/* Для планшетов */
+@media (max-width: 1024px) {
+    .recipeCard__card {
+        flex-direction: column; /* Изменяем на столбик */
+        align-items: center;
+    }
+    .recipeCard__card img {
+        width: 80%; /* Уменьшаем размер изображения */
+        height: auto;
+    }
+    .recipeCard__info {
+        width: 90%; /* Уменьшаем ширину информации */
+        align-items: center; /* Центрируем текст */
+    }
+    .recipeCard__info p {
+        font-size: 20px; /* Уменьшаем размер текста */
+    }
+    .recipeCard__details {
+        flex-direction: row; /* Вертикальный список */
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4px; /* Сжимаем расстояние */
+    }
+    .recipeCard__details div{
+        width: 20%;
+    }
+    .recipeCard__details img {
+        width: 36px; /* Уменьшаем размер иконок */
+        height: 36px;
+    }
+    .recipeCard__time {
+        font-size: 16px; /* Уменьшаем шрифт времени */
+    }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .recipeCard__card {
+        flex-direction: column; /* Делаем карточку в виде столбика */
+        align-items: center;
+        padding: 10px; /* Добавляем внутренний отступ */
+    }
+    .recipeCard__card img {
+        width: 100%; /* Изображение на всю ширину */
+        height: auto;
+    }
+    .recipeCard__info {
+        width: 100%; /* Информация на всю ширину */
+    }
+    .recipeCard__info p {
+        font-size: 18px; /* Уменьшаем шрифт для мобильных */
+    }
+    .recipeCard__details {
+        flex-direction: row; /* Вертикальный список */
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4px; /* Сжимаем расстояние */
+    }
+    .recipeCard__details div{
+        width: 20%;
+    }
+
+    .recipeCard__details img {
+        width: 24px;
+        /* Ещё уменьшаем иконки */
+        height: 24px;
+    }
+    .recipeCard__time {
+        font-size: 14px; /* Уменьшаем шрифт текста */
+    }
+}
+
+

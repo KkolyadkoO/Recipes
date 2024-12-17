@@ -1,0 +1,88 @@
+﻿.search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input {
+    width: 300px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background: #950740;
+}
+
+.search__input::placeholder {
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.search__button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #950740;
+    color: #FFF;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search__button:hover {
+    background-color: #950740;
+}
+
+.search__button img {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+}
+
+/* --- Адаптив для планшетов (ширина экрана до 768px) --- */
+@media (max-width: 768px) {
+    .search__input {
+        width: 70%; /* Уменьшаем ширину */
+        height: 46px;
+        font-size: 14px;
+    }
+
+    .search__button {
+        padding: 6px 8px;
+    }
+
+    .search__button img {
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+    }
+}
+
+/* --- Адаптив для мобильных устройств (ширина экрана до 480px) --- */
+@media (max-width: 480px) {
+    .search__container {
+        flex-direction: row; /* Поле ввода и кнопка друг под другом */
+    }
+
+    .search__input {
+        width: 80%; /* Растягиваем поле ввода на всю ширину */
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .search__button {
+        width: 30%; /* Кнопка также растягивается на всю ширину */
+        height: 40px;
+    }
+
+    .search__button img {
+        width: 18px;
+        height: 18px;
+        padding: 2px;
+    }
+}

@@ -6,3 +6,119 @@
     margin-bottom: 2vh;
     margin-top: 2vh;
 }
+
+.recipePage__filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-family: 'Underdog', system-ui;
+
+}
+
+.pagination__container li {
+    margin: 0 5px;
+}
+
+.pagination__container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 63px;
+    height: 63px;
+    border-radius: 8px;
+    background-color: #85003A; /* Темно-розовый цвет фона */
+    color: #FFF; /* Белый цвет текста */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.pagination__container a:hover {
+    background-color: #A00050; /* Цвет при наведении */
+}
+
+.pagination__active a {
+    background-color: #5C0026; /* Цвет для активной страницы */
+}
+
+.pagination__disabled a {
+    visibility: hidden; /* Скрываем стрелки, если страница недоступна */
+}
+
+.pagination__container .previous,
+.pagination__container .next {
+    font-size: 24px;
+    color: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.previous a,
+.next a {
+    background-color: transparent; /* Прозрачный фон */
+    color: #FFFFFF; /* Цвет стрелок */
+    text-align: center;
+    font-family: 'Underdog', system-ui;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Плавный переход цвета и увеличения */
+}
+
+.previous a:hover,
+.next a:hover {
+    background-color: transparent;
+    transform: scale(1.1); /* Легкое увеличение на 10% */
+}
+
+@media (min-width: 768px ) and (max-width: 1024px) {
+    .pagination__container a {
+        font-size: 30px; /* Уменьшение шрифта */
+        width: 50px; /* Меньшая ширина */
+        height: 50px;
+    }
+
+    .previous a,
+    .next a {
+        font-size: 40px; /* Меньший размер стрелок */
+    }
+}
+
+/* Адаптивность для мобильных устройств (макс. ширина 480px) */
+@media (max-width: 768px) {
+    .pagination__container a {
+        font-size: 20px; /* Еще меньше шрифт */
+        width: 40px; /* Еще меньше ширина */
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .pagination__container li {
+        margin: 0 3px; /* Меньше отступ между элементами */
+    }
+
+    .previous a,
+    .next a {
+        font-size: 30px; /* Уменьшение размера стрелок */
+    }
+}

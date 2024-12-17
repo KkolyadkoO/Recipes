@@ -24,7 +24,7 @@ const RecipeCard = ({title, image, text, time, cal}: RecipeCardProps) => {
                     <img src={"/images/cal.png"} alt="cal"/>
                     <div className="recipeCard__time">{cal} калл</div>
                     <img src={"/images/bookmark.png"} alt="bookmark"/>
-                    <div className="recipeCard__time">Добавить в книгу рецептов</div>
+                    <div className="recipeCard__time">Избранное</div>
                 </div>
             </div>
         </div>
