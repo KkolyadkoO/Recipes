@@ -1,0 +1,332 @@
+﻿.createRecipesPage__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+
+.createRecipesPage__title input {
+    width: 70%;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #DBDBDB;
+    background: Transparent;
+    font-family: 'Underdog', system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #FFF;
+}
+
+.createRecipesPage__title input:focus {
+    border: none;
+    outline: none;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #FFF;
+}
+
+.createRecipesPage__time {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.createRecipesPage__time input {
+    width: 3%;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #DBDBDB;
+    background: Transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.createRecipesPage__time input:focus {
+    border: none;
+    outline: none;
+}
+
+.createRecipesPage__time img {
+    width: 56px;
+    height: 56px;
+}
+
+.createRecipesPage__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.createRecipesPage__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.createRecipesPage__description textarea {
+    margin-top: 1%;
+    border: none;
+    width: 80%;
+    height: 30vh;
+    outline: none;
+    background: Transparent;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.createRecipesPage__description textarea:focus {
+    border: none;
+    outline: none;
+    background: Transparent;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.createRecipesPage__description textarea::placeholder {
+    color: #BFBFBF;
+}
+
+.createRecipesPage__ingredients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.createRecipesPage__ingredients__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    gap: 10vh;
+}
+
+.createRecipesPage__ingredients__items input {
+    border: none;
+    outline: none;
+    color: #DBDBDB;
+    background: Transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.createRecipesPage__ingredients__items input:focus {
+    border: none;
+    outline: none;
+}
+
+.createRecipesPage__ingredients-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #950740;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+
+.createRecipesPage__instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    gap: 20px;
+}
+
+.createRecipesPage__instructions__step{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #FFF;
+}
+
+.createRecipesPage__instructions__items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+.createRecipesPage__instructions__step__title{
+    margin-top: 2%;
+    color: #FFF;
+    font-family: 'Underdog', system-ui;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.createRecipesPage__instructions__step textarea {
+    margin-top: 1%;
+    border: none;
+    width: 80%;
+    height: 30vh;
+    outline: none;
+    background: Transparent;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.createRecipesPage__instructions__step textarea:focus {
+    border: none;
+    outline: none;
+    background: Transparent;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.createRecipesPage__finish{
+    display: flex;
+    margin: 2% 0;
+    flex-direction: column;
+    align-items: center;
+}
+.createRecipesPage__finish-button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #950740;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+
+/* Общие стили */
+@media (max-width: 1024px) {
+    .createRecipesPage__title input {
+        width: 90%;
+        font-size: 45px;
+    }
+
+    .createRecipesPage__time input {
+        width: 10%;
+        font-size: 24px;
+    }
+
+    .createRecipesPage__time img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .createRecipesPage__description textarea {
+        width: 90%;
+        font-size: 20px;
+        height: 20vh;
+    }
+
+    .createRecipesPage__ingredients__items {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .createRecipesPage__ingredients__items input {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .createRecipesPage__instructions__step__title {
+        font-size: 50px;
+    }
+
+    .createRecipesPage__instructions__step textarea {
+        font-size: 20px;
+        height: 20vh;
+    }
+
+    .createRecipesPage__finish-button {
+        font-size: 28px;
+        padding: 8px;
+    }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .createRecipesPage__instructions__items{
+        flex-direction: column;
+    }
+    .createRecipesPage__title input {
+        font-size: 32px;
+        width: 95%;
+    }
+
+    .createRecipesPage__time input {
+        font-size: 18px;
+        width: 15%;
+    }
+
+    .createRecipesPage__time img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .createRecipesPage__description textarea {
+        font-size: 16px;
+        width: 95%;
+        height: 15vh;
+    }
+
+    .createRecipesPage__ingredients__items {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 1%;
+    }
+
+    .createRecipesPage__ingredients__items input {
+        font-size: 16px;
+    }
+
+    .createRecipesPage__instructions__step__title {
+        font-size: 32px;
+    }
+
+    .createRecipesPage__instructions__step textarea {
+        font-size: 16px;
+        height: 15vh;
+    }
+    .createRecipesPage__instructions__items .upload-container {
+        width: 100% !important;
+    }
+
+    .createRecipesPage__finish-button {
+        font-size: 24px;
+        padding: 6px;
+    }
+    .createRecipesPage__instructions__step{
+        width: 100%;
+        margin-top: 2%;
+    }
+}
