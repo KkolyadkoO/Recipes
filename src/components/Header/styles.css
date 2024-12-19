@@ -5,7 +5,7 @@
     font-family: "Underdog", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 48px;
     line-height: normal;
     margin-right: 20px;
 }
@@ -14,7 +14,7 @@
     color: #FFF;
     text-align: center;
     font-family: "Roboto" , sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -47,7 +47,7 @@
 .nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav a:hover {
@@ -65,7 +65,7 @@
     border: none;
     padding: 5px 15px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -81,4 +81,95 @@
 
 .user-icon i {
     font-size: 24px;
+}
+/* Общие стили */
+.burger-menu, .side-menu {
+    display: none; /* По умолчанию скрываем бургер-меню */
+}
+
+.nav, .user-actions {
+    display: flex; /* Показываем пункты меню и кнопки на десктопе и планшете */
+}
+.header__icons{
+    width: 32px;
+    height: 32px;
+}
+
+/* Для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 36px;
+    }
+
+    .header__menu__text {
+        font-size: 16px;
+    }
+
+    .login-button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .nav, .user-actions {
+        display: none; /* Скрыть меню и кнопки */
+    }
+
+    .burger-menu, .side-menu {
+        display: block; /* Показываем бургер-меню */
+    }
+
+    .burger-menu__icon {
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .side-menu {
+        display: none; /* По умолчанию скрыто */
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        transform: translateX(100%); /* Сдвиг за экран */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .side-menu.open {
+        display: block; /* Показать меню */
+        transform: translateX(0); /* Выезд меню */
+    }
+
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .side-menu ul li {
+        margin-bottom: 15px;
+    }
+
+    .side-menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .side-menu .close-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
 }
